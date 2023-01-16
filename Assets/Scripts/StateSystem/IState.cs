@@ -7,6 +7,7 @@ namespace DAE.StateSystem
     public interface IState<TState>
         where TState : IState<TState>
     {
+        void OnStart();
         void OnEnter();
         void OnExit();
 

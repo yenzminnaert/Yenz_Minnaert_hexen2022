@@ -98,9 +98,11 @@ namespace DAE.BoardSystem
         }
 
 
-        public bool TryGetPieceAt(THex position, out TPiece piece) => _positionPiece.TryGetValue(position, out piece);
+        public bool TryGetPieceAt(THex position, out TPiece piece)
+            => _positionPiece.TryGetValue(position, out piece);
 
-        public bool TryGetPositionOf(TPiece piece, out THex position) => _positionPiece.TryGetKey(piece, out position);
+        public bool TryGetPositionOf(TPiece piece, out THex position)
+            => _positionPiece.TryGetKey(piece, out position);
 
 
         #region events

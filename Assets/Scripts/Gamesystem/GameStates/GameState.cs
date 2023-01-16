@@ -10,5 +10,6 @@ namespace DAE.GameSystem.GameStates
     {
         public const string GamePlayState = "gamePlayState";
         public const string ReplayState = "replayState";
+        public const string StartState = "startState";
     }
 }

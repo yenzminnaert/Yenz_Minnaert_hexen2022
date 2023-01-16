@@ -33,7 +33,6 @@ namespace DAE.HexSystem.Actions
                 }
             }
 
-
             Action forward = () =>
             {
                 for (int i = 0; i <= templist.Count - 1; i++)
@@ -58,25 +57,28 @@ namespace DAE.HexSystem.Actions
         public override List<IHex> IsolatedPositions(Board<IHex, TPiece> board, Grid<IHex> grid, IHex position, TPiece piece, CardType card)
         {
             ActionHelper<TCard, TPiece> actionHelperPartual = new ActionHelper<TCard, TPiece>(board, grid, position, piece, card);
-            actionHelperPartual.TargetedPlusSides(1)
-                        .TargetedPlusSides1(1)
-                        .TargetedPlusSides2(1)
-                        .TargetedPlusSides3(1)
-                        .TargetedPlusSides4(1)
-                        .TargetedPlusSides5(1);
+
+            actionHelperPartual.Meteor0(10)
+                       .Meteor1(10)
+                       .Meteor2(10)
+                       .Meteor3(10)
+                       .Meteor4(10)
+                       .Meteor5(10);
 
             return actionHelperPartual.Collect();
         }
 
+        // preview attack
         public override List<IHex> Validpositions(Board<IHex, TPiece> board, Grid<IHex> grid, IHex position, TPiece piece, CardType card)
         {
             ActionHelper<TCard, TPiece> actionHelper = new ActionHelper<TCard, TPiece>(board, grid, position, piece, card);
-            actionHelper.Direction0(1)
-                        .Direction1(1)
-                        .Direction2(1)
-                        .Direction3(1)
-                        .Direction4(1)
-                        .Direction5(1);
+
+            actionHelper.Meteor0(10)
+                       .Meteor1(10)
+                       .Meteor2(10)
+                       .Meteor3(10)
+                       .Meteor4(10)
+                       .Meteor5(10);
 
             return actionHelper.Collect();
 

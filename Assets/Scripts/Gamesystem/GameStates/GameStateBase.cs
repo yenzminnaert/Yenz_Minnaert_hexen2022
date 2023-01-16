@@ -17,7 +17,9 @@ namespace DAE.GameSystem.GameStates
         {
             StateMachine = stateMachine;
         }
-
+        public virtual void OnStart()
+        {
+        }
         public virtual void OnEnter()
         {
         }
@@ -39,7 +41,7 @@ namespace DAE.GameSystem.GameStates
         internal virtual void OnDrop(Piece piece, Hex position, Card card)
         {
 
-        }   
+        }
 
 
         internal virtual void Forward()
