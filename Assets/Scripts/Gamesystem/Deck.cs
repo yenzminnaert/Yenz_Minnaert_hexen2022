@@ -138,13 +138,6 @@ namespace DAE.Gamesystem
                 var cardobject = Instantiate(CardBase, HandView.transform);                
                 cardobject.GetComponent<Card>().InitializeCard(handCard);
             }
-
         }
-
-      
-
     }
-
-
 }
-

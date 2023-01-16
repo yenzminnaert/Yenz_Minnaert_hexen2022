@@ -24,6 +24,7 @@ namespace DAE.HexSystem
         Teleport,
         Thunderclap,
         Push,
-        Beam
+        Beam,
+        Meteor
     }
 }

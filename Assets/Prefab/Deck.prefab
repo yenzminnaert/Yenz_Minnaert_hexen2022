@@ -27,6 +27,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.379723, y: -0.8859347, z: -1.928339}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -46,6 +47,7 @@ MonoBehaviour:
   _currentDeckList: []
   _startingDeckList:
   - {fileID: 11400000, guid: 56f7801e53f4f41408409f9f108d4e5f, type: 2}
+  - {fileID: 11400000, guid: 5e001a372d0112e4ea02a99792bba299, type: 2}
   - {fileID: 11400000, guid: 01de615f854ad6944a750aee88a328c6, type: 2}
   - {fileID: 11400000, guid: 4d13f55b0ccf19c4da34689108f0ba49, type: 2}
   - {fileID: 11400000, guid: 6489214c13eb0ae4d8c88efa97de0a3c, type: 2}
@@ -58,5 +60,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4d13f55b0ccf19c4da34689108f0ba49, type: 2}
   - {fileID: 11400000, guid: 6489214c13eb0ae4d8c88efa97de0a3c, type: 2}
   _playerhandList: []
+  _discardList: []
   CardBase: {fileID: 0}
   HandView: {fileID: 0}

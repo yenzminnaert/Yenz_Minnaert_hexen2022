@@ -39,7 +39,9 @@ namespace DAE.HexSystem
 
             _actions.Add(CardType.Teleport, new TeleportAction<TCard, TPiece>(_replayManager));
 
-            _actions.Add(CardType.Push, new CleaveAction<TCard, TPiece>(_replayManager));                
+            _actions.Add(CardType.Push, new CleaveAction<TCard, TPiece>(_replayManager));
+            
+            _actions.Add(CardType.Meteor, new MeteorAction<TCard, TPiece>(_replayManager));
 
         }
 
